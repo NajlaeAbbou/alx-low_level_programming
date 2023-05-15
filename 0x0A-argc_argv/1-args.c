@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the new name
+ * main - print a number, followed by a new line.
  * @argc: argument count
  * @argv: arguments
  *
@@ -9,8 +9,9 @@
  */
 int main(int argc, char **argv)
 {
-	(void)argc;
+	(void)argv;
 
-	printf("%s\n", argv[0]);
+	printf("%d\n", argc - 1);
 	return (0);
 }
+

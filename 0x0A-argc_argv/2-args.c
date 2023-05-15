@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the new name
+ * main - all arguments should be printed, including the first one.
  * @argc: argument count
  * @argv: arguments
  *
@@ -9,8 +9,10 @@
  */
 int main(int argc, char **argv)
 {
-	(void)argc;
+	int i;
 
-	printf("%s\n", argv[0]);
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
+
 	return (0);
 }
