@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		{
 			for (i = 0; i < sizeof(coins[i]); i++)
 			{
-				if (total >= coins[i])
+				if (sum >= coins[i])
 				{
 					cnt += sum / coins[i];
 					sum = sum % coins[i];
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 			}
 		}
 		if (sum == 1)
-			count++;
+			cnt++;
 	}
 	else
 	{
