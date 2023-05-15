@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
- * If you rename the program, it will print the new name, without having to compile it again
- * @argc,@argv
+ * main - If you rename the program, it will print the new name, without having to compile it again
+ * @argc: argument count
+ * @argv: arguments
+ *
  * Return: 0
  */
 int main(int argc, char **argv)
