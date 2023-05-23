@@ -2,12 +2,12 @@
 #include "dog.h"
 
 /**
- * new_dog -  new dog
- * @name: name  
- * @age: age 
- * @owner: owner 
+ * new_dog - cr new dog
+ * @name: name of the dog  
+ * @age: age of the dog
+ * @owner: owner of the dog 
  *
- * Return: NULL If fail
+ * Return: null if  fail
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
