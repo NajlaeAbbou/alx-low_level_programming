@@ -3,7 +3,7 @@
 /**
   * int_index - a function that searches for an integer.
   * @array: array
-  * @size: the number of elements in the array 
+  * @size:the number of elements in the array.
   * @cmp: pointer to the function to be used to compare values
   *
   * Return: if size <= 0, return -1
