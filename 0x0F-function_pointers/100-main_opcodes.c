@@ -4,7 +4,7 @@
 /**
  * print_opcodes - print the opcodes of its own main function.
  * @a: address
- * @n: number of bytes 
+ * @n: number of bytes.
  *
  * Return: void
  */
