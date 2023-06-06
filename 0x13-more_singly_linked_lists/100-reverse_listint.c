@@ -1,4 +1,4 @@
-i#include "lists.h"
+include "lists.h"
 /**
  * reverse_listint - a function that reverses a listint_t linked list.
  * @head: pointer
