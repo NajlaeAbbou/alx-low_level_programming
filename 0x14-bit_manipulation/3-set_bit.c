@@ -4,7 +4,7 @@
  * set_bit - xxx.
  * @index: xxx
  * @n: xxx
- * Return:
+ * Return: xxx
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
