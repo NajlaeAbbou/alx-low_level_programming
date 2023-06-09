@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 
 	flag = 0;
 	dev = 1;
-	pov = sizeof(unsigned long int) * 8 - 1
+	pow = sizeof(unsigned long int) * 8 - 1;
 	for (i = 1; i <= pow; i++)
 		dev *= 2;
 	while (dev != 0)
