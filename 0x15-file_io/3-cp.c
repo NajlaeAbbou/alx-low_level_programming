@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - xxx
  * @argc: xxx
@@ -17,7 +20,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	
 	fd_from = open(argv[1], O_RDONLY);
 	/* test 98 */
 	if ((ssize_t)fd_from == -1)
@@ -49,11 +51,9 @@ int main(int argc, char *argv[])
 			close(fd_to);
 		exit(98);
 	}
-		
 		lenw = write(fd_to, buffer, lenr);
 		if (lenw != lenr)
 			lenw = -1;
-		test99(lenw, argv[2], fd_from, fd_to);
 		if (lenw == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
