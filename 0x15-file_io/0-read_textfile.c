@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
-/*
- * read_textfile - xxx 
+/**
+ * read_textfile - Reads a text file
  * @filename: xxx
  * @letters: xxx
- * Returns:xxx
+ * Return: xxx
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
