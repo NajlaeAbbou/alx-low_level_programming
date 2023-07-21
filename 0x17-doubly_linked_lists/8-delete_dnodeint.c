@@ -3,6 +3,7 @@
  * delete_dnodeint_at_index - deletes a node
  * @head: double pointer
  * @index: index
+ * Return: xxx
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -12,9 +13,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (head == NULL || *head == NULL)
 		return (-1);
 	tmp = *head;
-	curr = tmp->next;
 	if (index == 0)
 	{
+		curr = tmp->next;
 		*head = curr;
 		if (curr != NULL)
 		{
@@ -23,6 +24,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(tmp);
 		return (1);
 	}
+	curr = tmp->next;
 	for (i = 0; i < index; i++)
 	{
 		if (curr == NULL)
