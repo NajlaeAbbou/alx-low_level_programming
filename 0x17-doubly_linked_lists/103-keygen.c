@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 /**
  * main - generate a key depending on a username for crackme5
  * @argc: number of arguments passed
@@ -13,6 +14,7 @@ int main(int argc, char *argv[])
 	size_t len = strlen(argv[1]);
 	char max_char = argv[1][0];
 	int random_seed = argv[1][0];
+	size_t i;
 
 	if (argc != 2)
 	{
@@ -23,7 +25,7 @@ int main(int argc, char *argv[])
 	key[0] = 'A' + (len ^ 59) % 26;
 	key[1] = 'A' + (len ^ 79) % 26;
 	key[2] = 'A' + (len ^ 85) % 26;
-	for (size_t i = 1; i < len; i++)
+	for (i = 1; i < len; i++)
 	{
 		if (argv[1][i] > max_char)
 		{
@@ -33,7 +35,7 @@ int main(int argc, char *argv[])
 	key[3] = max_char;
 	key[4] = 'A' + ((len * len) ^ 239) % 26;
 
-	for (size_t i = 1; i < len; i++)
+	for (i = 1; i < len; i++)
 	{
 		random_seed ^= argv[1][i];
 	}
