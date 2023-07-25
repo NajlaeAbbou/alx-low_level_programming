@@ -3,23 +3,20 @@
 
 int rand()
 {
-	static int i = -1;
+	static int ct = -1;
 
-	i++;
-	switch( i )
-	{
-		case '0':
-			return 8;
-		case '1':
-			return 8;
-		case '2':
-			return 7;
-		case '3':
-			return 9;
-		case '4':
-			return 23;
-		case '5':
-			return 74;
-	}
-	return i * i % 30000;
+	ct++;
+	if (ct == 0)
+		return 8;
+	if (ct == 1)
+		return 8;
+	if (ct == 2)
+		return 7;
+	if (ct == 3)
+		return 9;
+	if (ct == 4)
+		return 23;
+	if (ct == 5)
+		return 74;
+	return ct * ct % 30000;
 }
