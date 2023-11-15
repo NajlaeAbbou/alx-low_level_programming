@@ -26,15 +26,15 @@ list_int_t *jump_list(list_int_t *list, size_t size, int value)
 			if (jp->index + 1 == size)
 				break;
 		}
-		printf("Value checked at index [%ld] = [%d]\n", jump->index, jump->n);
+		printf("Value checked at index [%ld] = [%d]\n", jp->index, jp->i);
 	}
 
 	printf("Value found between indexes [%ld] and [%ld]\n",
-			node->index, jump->index);
+			node->index, jp->index);
 
-	for (; node->index < jump->index && node->n < value; node = node->next)
-		printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
-	printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
+	for (; node->index < jp->index && node->i < value; node = node->next)
+		printf("Value checked at index [%ld] = [%d]\n", node->index, node->i);
+	printf("Value checked at index [%ld] = [%d]\n", node->index, node->i);
 
-	return (node->n == value ? node : NULL);
+	return (node->i == value ? node : NULL);
 }
