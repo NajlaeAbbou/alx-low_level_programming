@@ -29,9 +29,18 @@ typedef struct skip_list_s
 	size_t index;
 	struct skip_list_s *next;
 	struct skip_list_s *exp;
-} skiplist_t;
+} skip_list_t;
 
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
+int jump_search(int *array, size_t size, int value);
+int interpolation_search(int *array, size_t size, int value);
+int exponential_search(int *array, size_t size, int value);
+int advanced_binary(int *array, size_t size, int value);
+list_int_t *jump_list(list_int_t *list, size_t size, int value);
+list_int_t *create_list(int *array, size_t size);
+void free_list(list_int_t *list);
+void print_list(const list_int_t *list);
+skip_list_t *linear_skip(skip_list_t *list, int value);
 #endif
 
